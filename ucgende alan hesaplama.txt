@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+import static java.lang.Math.sqrt;
+
+public class hipotenus {
+    public static void main(String[] args) {
+       
+
+        double u,u1,u2,u3,alan;
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("Lutfen ucgenin kenar uzunluklarini giriniz  : ");
+
+        u1 = bjk.nextDouble();
+        System.out.println(u1 + " cm  ");
+
+        u2 = bjk.nextDouble();
+        System.out.println(u2 + " cm  ");
+
+        u3 = bjk.nextDouble();
+        System.out.println(u3 + " cm  ");
+
+        u = (u1+u2+u3)/2;
+        System.out.println(u + " cm  ");
+
+        alan=sqrt(u*(u-u1)*(u-u2)*(u-u3));
+
+        System.out.println("ucgenin alani : " + alan + " cm  ");
+
+
+    }
+}
